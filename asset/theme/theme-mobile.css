@@ -245,6 +245,9 @@ footer{
 .copyright{
     text-align: center;
     background-color:var(--aksen);
-    color: var(--aksen-sc);
+    color: black;
 
+}
+.copyright p{
+    font-size: .78rem;
 }
