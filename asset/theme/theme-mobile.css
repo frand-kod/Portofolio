@@ -14,12 +14,14 @@
     --aksen-sc:#ede7e3;
     --complement:#ffa62b;
     --font-color:white;
+    --bg-pr:rgb(22, 105, 122,.12);
+    --bg-scnd:rgb(255, 166, 43,.3);
 }
 li{
     list-style-type: none;
 }
 p{
-    font-size: 2.6vh;
+    font-size: 1rem;
 }
 a{
     text-decoration: none;
@@ -28,7 +30,7 @@ a{
     align-items: center;
 }
 h1{
-    font-size: 6vh;
+    font-size: 2.5rem;
 }
 ul{
     display: flex;
@@ -95,14 +97,21 @@ color: var(--complement);
 transition: .1s ease-in;
 }
 /* main */
-
+.content{
+display: flex;
+justify-content: space-around;
+background-color: var(--bg-scnd);
+padding: 2rem;
+}
 .hero{
     display: flex;
-    margin: 6rem 8rem;
-    justify-content: space-around;
+    margin: 2rem 0;
+    justify-content: center;
     align-items: center;
     padding: 0 3rem ;
-
+    background-color: var(--bg-pr);
+    border-radius: .2rem;
+height: 32rem;
 }
 .intro{
     display: flex;
@@ -113,25 +122,35 @@ transition: .1s ease-in;
 
 }
 .image img{
-    width: auto;
+    width: 15rem;
     height: auto;
 }
 .intro p{
-    width: 25vh;
+    max-width: 20rem;
 
 }
-article{
-    margin-bottom: 2vh;
-    border-right: 1rem dotted var(--color-pr);
+.aboutme{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
 }
-article .italic{
-    margin: 8vh 0;
+.quotes{
+    display: flex;
+    border-left: .5rem solid var(--color-pr);
     font-size: 5vh;
+    background-color: #fff;
+    padding: 2rem 1rem;
+    gap: 2rem;
+    margin: 1rem;
+    align-items: center;
+    flex-direction: column;
 }
 /* aside */
 aside{
     background-color: var(--complement);
-    padding:10vh;
+    padding:2rem;
+    margin: 1rem 0;
     color: var(--font-color);
  
 }
@@ -181,30 +200,40 @@ aside{
 
 /* footer */
 footer{
+    height: 20rem;
     display: flex;
     margin: 2rem 0 0;
     flex-direction: column;
     background-color: var(--color-pr);
     text-align: center;
+    justify-content: center;
     padding: 4vh 0;
     color: var(--aksen-sc);
 }
+.banner{
+    margin-bottom: 1rem;
+}
 .wrapper-ft{
-    margin: 5vh 2vh 0 0  ;
+
     display: flex;
     justify-content: center;
-    gap: 2vh;
-    
+    gap: 2vh;   
+    padding: .78rem;
+}
+.center{
+    align-content: center;
+    align-self: center;
 }
 .list-item{
     border-bottom: 2px solid transparent;
 }
 .list-item:hover{
-    border-bottom: 2px solid var(--aksen-sc);
+    border-bottom: 2px solid black;
     transition: .1s ease-in;
 }
 .copyright{
     text-align: center;
-    background-color: black;
+    background-color:var(--aksen);
     color: var(--aksen-sc);
+
 }
