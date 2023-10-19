@@ -47,9 +47,16 @@ span:hover{
     border-radius: .8vh;
     padding: .2vh 0 .2vh 0 ;
 }
-
+.image{
+    
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+}
 img{
-    height: 1.7rem;
+    height: 2rem;
+    
 }
 body{
     font-family: "Mulish",sans-serif;
@@ -122,8 +129,10 @@ height: 32rem;
 
 }
 .image img{
-    width: 15rem;
+    border-radius: .4vh;
+    width: 13rem;
     height: auto;
+    border: .01rem solid var(--complement);
 }
 .intro p{
     max-width: 20rem;
