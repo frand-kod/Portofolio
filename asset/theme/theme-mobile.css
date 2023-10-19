@@ -132,7 +132,6 @@ height: 32rem;
     border-radius: .4vh;
     width: 13rem;
     height: auto;
-    border: .01rem solid var(--complement);
 }
 .intro p{
     max-width: 20rem;
@@ -161,7 +160,20 @@ aside{
     padding:2rem;
     margin: 1rem 0;
     color: var(--font-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
  
+}
+
+.img-me{
+text-align: center;
+border-radius: 2rem;
+}
+
+.img-me img{
+    height: 6rem;
 }
 .link{
     display: flex;
@@ -170,6 +182,7 @@ aside{
     align-items: center;
 
 }
+
 .link h1{
     margin-bottom: 6vh;
 
@@ -180,32 +193,21 @@ aside{
 .link span:hover{
     color: black;
     background-color: #fff;
-
 }
-.itlist{
+.wrapper-side{
     display: flex;
-    flex-direction: column;
-}
-.itlist a{
     flex-wrap: wrap;
-    text-align: center;
+    gap: .5rem;
+}
+.wrapper-side a{
     justify-content: center;
-    border-radius: 2vh;
-    padding: 1vh;
     align-items: center;
 }
-.itlist a:hover{
-    color: black;
-    background-color: var(--aksen-sc);
-
-
-
+.wrapper-side a:hover{
+color: var(--font-color);
+transition: .1s ease-in;
 }
-.itlist a img{
-    width: 6vh;
-    border-radius: 2vh;
 
-}
 
 /* footer */
 footer{
